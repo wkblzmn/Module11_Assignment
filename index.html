@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to My Website</title>
+  <style>
+    :root {
+      --primary-color: #007bff;
+      --secondary-color: #f1f1f1;
+      --heading-font-size: 32px;
+      --container-width: 600px;
+      --container-height: 400px;
+      --table-cell-border-color: #ddd;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: var(--container-width);
+      height: var(--container-height);
+      background-color: var(--secondary-color);
+      padding: 20px;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      font-size: var(--heading-font-size);
+      text-align: center;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    ul li:first-child {
+      font-weight: bold;
+    }
+
+    img {
+      width: 300px;
+      height: 200px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table th, table td {
+      padding: 10px;
+      border: 1px solid var(--table-cell-border-color);
+    }
+
+    table th {
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+
+    table tr:hover {
+      background-color: #f2f2f2;
+    }
+
+    table td:first-child {
+      font-weight: bold;
+    }
+
+    table tbody tr:last-child td {
+      text-align: right;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ff0000;
+    }
+
+    a:active {
+      color: #00ff00;
+    }
+
+    ul:before {
+      content: "•";
+      margin-right: 8px;
+    }
+
+    .container > * {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Website</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis, enim id dapibus dapibus, lectus dui euismod felis, sed auctor enim ipsum sed ligula.</p>
+    <ul>
+      <li style="color: red;">List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+      <li>List item 4</li>
+      <li>List item 5</li>
+    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 3</th>
+          <th>Column 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Row 1, Column 1</td>
+          <td>Row 1, Column 2</td>
+          <td>Row 1, Column 3</td>
+          <td>Row 1, Column 4</td>
+        </tr>
+        <tr>
+          <td>Row 2, Column 1</td>
+          <td>Row 2, Column 2</td>
+          <td>Row 2, Column 3</td>
+          <td>Row 2, Column 4</td>
+        </tr>
+        <tr>
+          <td>Row 3, Column 1</td>
+          <td>Row 3, Column 2</td>
+          <td>Row 3, Column 3</td>
+          <td>Row 3, Column 4</td>
+        </tr>
+        <tr>
+          <td>Row 4, Column 1</td>
+          <td>Row 4, Column 2</td>
+          <td>Row 4, Column 3</td>
+          <td>Row 4, Column 4</td>
+        </tr>
+        <tr>
+          <td>Row 5, Column 1</td>
+          <td>Row 5, Column 2</td>
+          <td>Row 5, Column 3</td>
+          <td>Row 5, Column 4</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
